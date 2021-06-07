@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 set -e
 
 # don't start ts3server with root permissions
@@ -47,8 +47,6 @@ if [ "$1" = 'ts3server' ]; then
     file_env 'TS3SERVER_DB_PASSWORD'
     file_env 'TS3SERVER_DB_NAME'
     
-    echo -e ${TS3SERVER_WHITELIST_IPS:-127.0.0.1\n::1} > ${TS3SERVER_IP_WHITELIST:-query_ip_whitelist.txt}
-
     cat << EOF | sed 's/^[ \t]*//;s/[ \t]*$//;/^$/d' > /var/run/ts3server/ts3server.ini
         licensepath=${TS3SERVER_LICENSEPATH}
         query_protocols=${TS3SERVER_QUERY_PROTOCOLS:-raw}
