@@ -11,7 +11,7 @@ ENV PATH "${PATH}:/opt/ts3server"
 RUN export VERSION="$(curl $(echo https://raw.githubusercontent.com/Rene-Roscher/teamspeak-linux-docker-images/master/latest))"
 
 ARG TEAMSPEAK_CHECKSUM=b4134aeba964782e10c22dcb96b6de4c96e558965e9d5ed9b0db47e648ad1498
-ARG TEAMSPEAK_URL=https://files.teamspeak-services.com/releases/server/${VERSION}/teamspeak3-server_linux_alpine-3.13.3.tar.bz2
+ARG TEAMSPEAK_URL="https://files.teamspeak-services.com/releases/server/${VERSION}/teamspeak3-server_linux_alpine-${VERSION}.tar.bz2"
 
 RUN set -eux; \
     apk add --no-cache --virtual .fetch-deps tar; \
