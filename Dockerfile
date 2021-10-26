@@ -8,15 +8,15 @@ RUN set -eux; \
 
 ENV PATH "${PATH}:/opt/ts3server"
 
-ARG VERSION="$(curl $(echo https://raw.githubusercontent.com/subservices/teamspeak-linux-docker-images/master/latest))"
+ARG VERSION="3.13.6"
 
-ARG TEAMSPEAK_CHECKSUM=b4134aeba964782e10c22dcb96b6de4c96e558965e9d5ed9b0db47e648ad1498
+#ARG TEAMSPEAK_CHECKSUM=b4134aeba964782e10c22dcb96b6de4c96e558965e9d5ed9b0db47e648ad1498
 ARG TEAMSPEAK_URL="https://files.teamspeak-services.com/releases/server/${VERSION}/teamspeak3-server_linux_alpine-${VERSION}.tar.bz2"
 
 RUN set -eux; \
     apk add --no-cache --virtual .fetch-deps tar; \
     wget "${TEAMSPEAK_URL}" -O server.tar.bz2; \
-    echo "${TEAMSPEAK_CHECKSUM} *server.tar.bz2" | sha256sum -c -; \
+#    echo "${TEAMSPEAK_CHECKSUM} *server.tar.bz2" | sha256sum -c -; \
     mkdir -p /opt/ts3server; \
     tar -xf server.tar.bz2 --strip-components=1 -C /opt/ts3server; \
     rm server.tar.bz2; \
