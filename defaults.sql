@@ -46,7 +46,7 @@ INSERT INTO server_properties (server_id, id, ident, value) VALUES
 
 -- virtual server template properties
 INSERT INTO instance_properties (server_id, string_id, id, ident, value) VALUES
--- (0, "", 0, "serverinstance_filetransfer_port", "30033"),
+(0, "", 0, "serverinstance_filetransfer_port", "30033"),
 (0, "", 0, "serverinstance_max_download_total_bandwidth", "-1"),
 (0, "", 0, "serverinstance_max_upload_total_bandwidth", "-1"),
 (0, "", 0, "serverinstance_serverquery_flood_commands", "100"),
