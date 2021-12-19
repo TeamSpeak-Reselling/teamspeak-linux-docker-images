@@ -25,8 +25,6 @@ RUN set -eux; \
 VOLUME /var/ts3server/
 WORKDIR /var/ts3server/
 
-EXPOSE 9987/udp 10011 30033 
-
 COPY entrypoint.sh /opt/ts3server
 COPY defaults.sql /opt/ts3server/sql
 
