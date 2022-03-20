@@ -1,6 +1,6 @@
 --
 -- Schumacher und Blees GbR - TeamSpeak Settings
--- Last updated: 26.10.2021 07:52
+-- Last updated: 20.03.2022 02:41
 --
 
 -- master instance properties
@@ -585,8 +585,6 @@ INSERT INTO perm_server_group (server_id, id1, id2, perm_id, perm_value, perm_ne
 
 -- server group permissions for 'Server Admin' (id:3)
 INSERT INTO perm_server_group (server_id, id1, id2, perm_id, perm_value, perm_negated, perm_skip) VALUES
- (0, 3, 0, "b_serverinstance_help_view", 1, 0, 0),
- (0, 3, 0, "b_serverinstance_info_view", 1, 0, 0),
  (0, 3, 0, "b_serverinstance_permission_list", 1, 0, 0),
  (0, 3, 0, "b_serverinstance_permission_find", 1, 0, 0),
  (0, 3, 0, "b_virtualserver_info_view", 1, 0, 0),
@@ -777,8 +775,6 @@ INSERT INTO perm_server_group (server_id, id1, id2, perm_id, perm_value, perm_ne
  (0, 3, 0, "i_ft_directory_create_power", 75, 0, 0),
  (0, 3, 0, "i_ft_quota_mb_download_per_client", -1, 0, 0),
  (0, 3, 0, "i_ft_quota_mb_upload_per_client", -1, 0, 0),
- (0, 3, 0, "i_needed_modify_power_serverinstance_help_view", 75, 0, 0),
- (0, 3, 0, "i_needed_modify_power_serverinstance_info_view", 75, 0, 0),
  (0, 3, 0, "i_needed_modify_power_serverinstance_permission_list", 75, 0, 0),
  (0, 3, 0, "i_needed_modify_power_serverinstance_permission_find", 75, 0, 0),
  (0, 3, 0, "i_needed_modify_power_virtualserver_info_view", 75, 0, 0),
