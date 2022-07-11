@@ -22,10 +22,10 @@ jobs:
           username: ${{ github.repository_owner }}
           password: ${{ secrets.DOCKER_REGISTRY_TOKEN }}
   push:
-    needs: auth-test
+#    needs: auth-test
 
     runs-on: ubuntu-latest
-    if: github.event_name == 'push'
+#    if: github.event_name == 'push'
 
     steps:
       - uses: actions/checkout@v2
