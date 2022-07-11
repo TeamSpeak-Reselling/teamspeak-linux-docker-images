@@ -8,7 +8,7 @@ RUN set -eux; \
 
 ENV PATH "${PATH}:/opt/ts3server"
 
-ARG VERSION="3.13.6"
+ARG VERSION="3.13.7"
 
 ARG TEAMSPEAK_URL="https://files.teamspeak-services.com/releases/server/${VERSION}/teamspeak3-server_linux_alpine-${VERSION}.tar.bz2"
 
