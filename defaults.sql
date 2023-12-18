@@ -8,7 +8,7 @@ INSERT INTO server_properties (server_id, id, ident, value) VALUES
 (0, 0, "virtualserver_name", "TeamSpeak ]|[ Server"),
 (0, 0, "virtualserver_name_phonetic", ""),
 (0, 0, "virtualserver_welcomemessage", "Welcome to this TeamSpeak Server, please check [URL]www.teamspeak.com[/URL]."),
-(0, 0, "virtualserver_maxclients", "128"),
+(0, 0, "virtualserver_maxclients", "2"),
 (0, 0, "virtualserver_reserved_slots", "0"),
 (0, 0, "virtualserver_hostmessage", ""),
 (0, 0, "virtualserver_hostmessage_mode", "0"),
